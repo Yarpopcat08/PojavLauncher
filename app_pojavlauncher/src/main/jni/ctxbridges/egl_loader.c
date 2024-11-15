@@ -36,22 +36,22 @@ bool dlsym_EGL() {
         return false;
     }
     eglBindAPI_p = (void*) eglGetProcAddress_p("eglBindAPI");
-    eglChooseConfig_p = (void*) eglGetProcAddress_p( "eglChooseConfig");
-    eglCreateContext_p = (void*) eglGetProcAddress_p( "eglCreateContext");
-    eglCreatePbufferSurface_p = (void*) eglGetProcAddress_p( "eglCreatePbufferSurface");
-    eglCreateWindowSurface_p = (void*) eglGetProcAddress_p( "eglCreateWindowSurface");
-    eglDestroyContext_p = (void*) eglGetProcAddress_p( "eglDestroyContext");
-    eglDestroySurface_p = (void*) eglGetProcAddress_p( "eglDestroySurface");
-    eglGetConfigAttrib_p = (void*) eglGetProcAddress_p( "eglGetConfigAttrib");
-    eglGetCurrentContext_p = (void*) eglGetProcAddress_p( "eglGetCurrentContext");
-    eglGetDisplay_p = (void*) eglGetProcAddress_p( "eglGetDisplay");
-    eglGetError_p = (void*) eglGetProcAddress_p( "eglGetError");
-    eglInitialize_p = (void*) eglGetProcAddress_p( "eglInitialize");
-    eglMakeCurrent_p = (void*) eglGetProcAddress_p( "eglMakeCurrent");
-    eglSwapBuffers_p = (void*) eglGetProcAddress_p( "eglSwapBuffers");
-    eglReleaseThread_p = (void*) eglGetProcAddress_p( "eglReleaseThread");
-    eglSwapInterval_p = (void*) eglGetProcAddress_p( "eglSwapInterval");
-    eglTerminate_p = (void*) eglGetProcAddress_p( "eglTerminate");
+    eglChooseConfig_p = (void*) eglGetProcAddress_p("eglChooseConfig");
+    eglCreateContext_p = (void*) eglGetProcAddress_p("eglCreateContext");
+    eglCreatePbufferSurface_p = (void*) eglGetProcAddress_p("eglCreatePbufferSurface");
+    eglCreateWindowSurface_p = (void*) eglGetProcAddress_p("eglCreateWindowSurface");
+    eglDestroyContext_p = (void*) eglGetProcAddress_p("eglDestroyContext");
+    eglDestroySurface_p = (void*) eglGetProcAddress_p("eglDestroySurface");
+    eglGetConfigAttrib_p = (void*) eglGetProcAddress_p("eglGetConfigAttrib");
+    eglGetCurrentContext_p = (void*) eglGetProcAddress_p("eglGetCurrentContext");
+    eglGetDisplay_p = (void*) eglGetProcAddress_p("eglGetDisplay");
+    eglGetError_p = (void*) eglGetProcAddress_p("eglGetError");
+    eglInitialize_p = (void*) eglGetProcAddress_p("eglInitialize");
+    eglMakeCurrent_p = (void*) eglGetProcAddress_p("eglMakeCurrent");
+    eglSwapBuffers_p = (void*) eglGetProcAddress_p("eglSwapBuffers");
+    eglReleaseThread_p = (void*) eglGetProcAddress_p("eglReleaseThread");
+    eglSwapInterval_p = (void*) eglGetProcAddress_p("eglSwapInterval");
+    eglTerminate_p = (void*) eglGetProcAddress_p("eglTerminate");
     eglGetCurrentSurface_p = (void*) eglGetProcAddress_p("eglGetCurrentSurface");
     return true;
 }
