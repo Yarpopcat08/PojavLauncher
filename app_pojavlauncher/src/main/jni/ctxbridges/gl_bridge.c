@@ -63,11 +63,14 @@ static void gl_init_gl4es_internals() {
     if(gl4es == NULL) return;
     void (*set_getmainfbsize)(void (*new_getMainFBSize)(int* width, int* height));
     set_getmainfbsize = dlsym(gl4es, "set_getmainfbsize");
-    if(set_getmainfbsize == NULL) goto cleanup;
+    if(set_getmainfbsize == NULL) goto warn;
     set_getmainfbsize(gl4esi_get_display_dimensions);
-    // No return here as dlclose just decreases a ref counter
-    cleanup:
+    goto cleanup;
+
+    warn:
     printf("gl4esinternals warning: gl4es was found but internals not initialized. expect rendering issues.\n");
+    cleanup:
+    // dlclose just decreases a ref counter, so this is fine
     dlclose(gl4es);
 }
 
